@@ -58,7 +58,7 @@ export default function TopCollection({ className, children }: Props) {
   ];
   return (
     <main className={cn("", className)}>
-      <Container className="max-w-[1000px] flex flex-col items-center gap-6 mt-20 mb-20">
+      <Container className="max-w-[1200px] flex flex-col items-center gap-6 mt-20 mb-20">
         <div className="text-3xl font-bold mb-4">Top Collections</div>
 
         <div className="w-full">
@@ -74,8 +74,6 @@ export default function TopCollection({ className, children }: Props) {
               <div>Items</div>
             </div>
           </div>
-
-          {/* LIST */}
           <div className="flex flex-col gap-8 w-full mt-6">
             {TopCollectionList.map((item) => (
               <div
