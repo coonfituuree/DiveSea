@@ -149,9 +149,9 @@ export default function ExploreMarketplace({ className, children }: Props) {
           {ExploreList.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col justify-center w-64 max-md:w-96 h-full py-4 bg-white shadow-[0_0_25px_rgba(0,0,0,0.2)] rounded-2xl items-center gap-3 max-md:gap-6">
+              className="flex flex-col justify-center w-64 max-md:w-80 h-full py-4 bg-white shadow-[0_0_25px_rgba(0,0,0,0.2)] rounded-2xl items-center gap-3 max-md:gap-6">
               <div className="relative">
-                <div className="absolute top-3 left-[53%] bg-[rgba(28,29,32,0.35)] rounded-xl text-white text-sm px-2 py-2 max-md:text-2xl max-md:left-[50%] max-md:top-4">
+                <div className="absolute top-3 left-[53%] bg-[rgba(28,29,32,0.35)] rounded-xl text-white text-sm px-2 py-2 max-md:text-xl max-md:left-[50%] max-md:top-4">
                   {item.time}
                 </div>
                 <Image
@@ -159,7 +159,7 @@ export default function ExploreMarketplace({ className, children }: Props) {
                   alt=""
                   width={1000}
                   height={1000}
-                  className="w-60 h-60 max-md:w-92 max-md:h-92 "
+                  className="w-60 h-60 max-md:w-76 max-md:h-76 "
                 />
               </div>
 
@@ -167,7 +167,7 @@ export default function ExploreMarketplace({ className, children }: Props) {
                 {item.name}
               </div>
 
-              <div className="flex items-center justify-center gap-8 max-md:gap-22 max-md:mb-2">
+              <div className="flex items-center justify-center gap-8 max-md:mb-2">
                 <div className="flex flex-col ">
                   <div className="text-[#94A3B8] text-sm font-semibold max-md:text-xl">
                     Current Bid
