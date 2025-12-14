@@ -1,13 +1,12 @@
 import Container from "@/shared/ui/Container";
+import ExploreMarketplace from "@/shared/ui/forHomePage/ExploreMarketplace";
 import TopCollecitonGrid from "@/shared/ui/forHomePage/TopCollecitonGrid";
-import TopCollection from "@/shared/ui/forHomePage/TopCollection";
 
 export default function Home() {
   return (
     <div>
-      <Container>Home</Container>
-      {/* <TopCollection /> */}
       <TopCollecitonGrid />
+      <ExploreMarketplace />
     </div>
   );
 }

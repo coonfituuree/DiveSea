@@ -3,6 +3,8 @@ import React from "react";
 import Container from "../Container";
 import Image from "next/image";
 import { Fragment } from "react";
+import { ArrowRight } from "lucide-react";
+import { TopCollectionItem } from "@/types/collection";
 
 type Props = {
   className?: string;
@@ -18,7 +20,7 @@ export default function TopCollecitonGrid({ className, children }: Props) {
     "Owners",
     "Items",
   ];
-  const TopCollectionList = [
+  const TopCollectionList: TopCollectionItem[] = [
     {
       id: 1,
       image: "collection/firstUser.svg",
@@ -139,6 +141,11 @@ export default function TopCollecitonGrid({ className, children }: Props) {
               </div>
             </Fragment>
           ))}
+        </div>
+
+        <div className="flex mt-2 max-sm:mt-0 ml-auto max-sm:text-sm items-center gap-2 text-[#ACADB9] font-medium cursor-pointer hover:text-black transition-colors">
+          Explore All
+          <ArrowRight size={20} />
         </div>
       </Container>
     </main>
